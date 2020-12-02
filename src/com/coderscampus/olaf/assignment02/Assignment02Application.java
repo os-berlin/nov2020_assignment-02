@@ -23,11 +23,11 @@ public class Assignment02Application {
 				System.out.println("Your guess is not between 1 and 100, please try again");
 			} else if (userInput < numberToGuess) {
 				System.out.println("Please pick a higher number");
+				guessCounter--;
 			} else if (userInput > numberToGuess) {
 				System.out.println("Please pick a lower number");
-			} else {correctGuess = true;}
-			
-			guessCounter--;
+				guessCounter--;
+			} else {correctGuess = true;}						
 		}
 		
 		if (correctGuess == true) {
